@@ -126,20 +126,23 @@ class Panel {
 
     const slot = "<p>This is child content</p>";
 
-    return `<!DOCTYPE html>
-			<html lang="en">
-        <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>${TITLE}</title>
-        </head>
-        <body class="vscode-light">
-          <${TAG} nonce="${nonce}" >
-            ${slot}
-          </${TAG}>
-          <script nonce="${nonce}" type="module" src="${scriptUri}"></script>
-        </body>
-			</html>`;
+    const htmlSource = `
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>${TITLE}</title>
+      </head>
+      <body class="vscode-light">
+        <${TAG} nonce="${nonce}" >
+          ${slot}
+        </${TAG}>
+        <script nonce="${nonce}" type="module" src="${scriptUri}"></script>
+      </body>
+    </html>`;
+
+    return htmlSource;
   }
 }
 

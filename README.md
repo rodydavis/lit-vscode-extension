@@ -5,3 +5,10 @@ Example of how to use a [Lit](https://lit.dev) web component and render it in a 
 You can try the demo [here](https://rodydavis.github.io/lit-vscode-extension/)!
 
 ![](/screenshot.png)
+
+## Getting Started
+
+- Open this example in VS Code 1.49+
+- `npm install`
+- `npm run compile`
+- `F5` to start debugging
