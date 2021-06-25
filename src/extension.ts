@@ -3,6 +3,7 @@ import * as vscode from "vscode";
 const WEB_DIR: string = "build";
 const WEB_SCRIPT: string = "main.js";
 const TITLE: string = "Lit Example";
+const TAG: string = "my-element";
 
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
@@ -133,9 +134,9 @@ class Panel {
           <title>${TITLE}</title>
         </head>
         <body class="vscode-light">
-          <vscode-extension nonce="${nonce}" >
+          <${TAG} nonce="${nonce}" >
             ${slot}
-          </vscode-extension>
+          </${TAG}>
           <script nonce="${nonce}" type="module" src="${scriptUri}"></script>
         </body>
 			</html>`;

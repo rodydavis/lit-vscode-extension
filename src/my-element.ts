@@ -1,8 +1,8 @@
 import { html, css, LitElement } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
 
-@customElement("vscode-extension")
-export class VscodeExtension extends LitElement {
+@customElement("my-element")
+export class MyElement extends LitElement {
   static styles = css`
     :host {
       display: block;
