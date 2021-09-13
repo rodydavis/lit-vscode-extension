@@ -38,7 +38,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "ext": "tsc src/extension.ts --outdir build --skipLibCheck --module commonjs",
+    "ext": "tsc --outdir build --skipLibCheck --module commonjs",
     "compile": "npm run build && npm run ext",
     "serve": "vite preview"
   },
