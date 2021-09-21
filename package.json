@@ -43,7 +43,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "lit": "^2.0.0-rc.2"
+    "lit": "*"
   },
   "devDependencies": {
     "@types/node": "^15.12.4",
